@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Register</title>
+<script language="javascript">
+var e,p,b,s,n,r;
+function validate()
+{
+e=document.f1.t1.value;
+p=document.f1.t2.value;
+if(e==""||e==null||p==""||p==null)
+{
+document.all.auth.innerHTML="<font>*All Fields Are Mandatory";
+return false;
+}
+else
+{
+return true;
+}
+}
+</script>
+</head>
+<body bgcolor=black alink=white vlink=white text=white>
+<table width=80% align=center>
+<tr>
+<td onmouseover="style.fontFamily='comic sans ms';" onmouseout="style.backgroundColor='black';style.fontFamily='monotype corsiva';"><font size=5 color=white><a href="home.html" style="text-decoration:'none';">Home</a></td>
+<td onmouseover="style.fontFamily='comic sans ms';" onmouseout="style.backgroundColor='black';style.fontFamily='monotype corsiva';"><font size=5 color=white><a href="register.html" style="text-decoration:'none';">Register</a></td>
+<td onmouseover="style.fontFamily='comic sans ms';" onmouseout="style.backgroundColor='black';style.fontFamily='monotype corsiva';"><font size=5 color=white><a href="login.html" style="text-decoration:'none';">Login</a></td>
+<td onmouseover="style.fontFamily='comic sans ms';" onmouseout="style.backgroundColor='black';style.fontFamily='monotype corsiva';"><font size=5 color=white><a href="login.html" style="text-decoration:'none';">Search</a></td>
+<td onmouseover="style.fontFamily='comic sans ms';" onmouseout="style.backgroundColor='black';style.fontFamily='monotype corsiva';"><font size=5 color=white><a href="display.html" style="text-decoration:'none';">Display</a></td>
+</tr>
+</table>
+<hr size=5 color=white>
+<table border=0>
+<tr>
+<td><img src="images/6.jpg" width=300 height=300 style="filter:alpha(style=2,opacity=60%)"></td>
+<td width=40%><marquee direction=up onmouseover="this.stop()" onmouseout="this.start()"><font face="comic sans ms" size=2>&hearts;Model Institute Of Engg & Tech<br><br>
+&hearts;Pioneer in technical education<br><br>
+&hearts;Governed by a team of professionals<br><br>
+&hearts;Most cost effective</font></marquee></td>
+<td valign=top><form action="http://localhost/website/Login.php" name=f1 method=post onsubmit="return validate()">
+<table border=0>
+
+<tr>
+<td>Enter Email</td>
+<td></td>
+<td><input type=text name=t1 size=12></td>
+</tr>
+<tr>
+<td>Enter Password</td>
+<td></td>
+<td><input type=password name=t2 size=12></td>
+</tr>
+<tr>
+<td>
+<input type=submit value=Login>
+</td>
+<td></td>
+<td>
+<input type=reset value=Reset>
+</td>
+</tr>
+</table>
+</form>
+<font size=2 color=red id="auth"></font>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Register</title>
+<script language="javascript">
+var e,p,b,s,n,r;
+function validate()
+{
+n=document.f1.t1.value;
+r=document.f1.t2.value;
+e=document.f1.t3.value;
+p=document.f1.t4.value;
+b=document.f1.s1.value;
+s=document.f1.s2.value;
+if(e==""||e==null||p==""||p==null||b==""||b==null||s==""||s==null||n==""||n==null||r==""||r==null)
+{
+document.all.auth.innerHTML="<font>*All Fields Are Mandatory";
+return false;
+}
+else
+{
+return true;
+}
+}
+</script>
+</head>
+<body bgcolor=black alink=white vlink=white text=white>
+<table width=80% align=center>
+<tr>
+<td onmouseover="style.fontFamily='comic sans ms';" onmouseout="style.backgroundColor='black';style.fontFamily='monotype corsiva';"><font size=5 color=white><a href="home.html" style="text-decoration:'none';">Home</a></td>
+<td onmouseover="style.fontFamily='comic sans ms';" onmouseout="style.backgroundColor='black';style.fontFamily='monotype corsiva';"><font size=5 color=white><a href="register.html" style="text-decoration:'none';">Register</a></td>
+<td onmouseover="style.fontFamily='comic sans ms';" onmouseout="style.backgroundColor='black';style.fontFamily='monotype corsiva';"><font size=5 color=white><a href="login.html" style="text-decoration:'none';">Login</a></td>
+<td onmouseover="style.fontFamily='comic sans ms';" onmouseout="style.backgroundColor='black';style.fontFamily='monotype corsiva';"><font size=5 color=white><a href="login.html" style="text-decoration:'none';">Search</a></td>
+<td onmouseover="style.fontFamily='comic sans ms';" onmouseout="style.backgroundColor='black';style.fontFamily='monotype corsiva';"><font size=5 color=white><a href="display.html" style="text-decoration:'none';">Display</a></td>
+</tr>
+</table>
+<hr size=5 color=white>
+<table border=0>
+<tr>
+<td><img src="images/6.jpg" width=300 height=300 style="filter:alpha(style=2,opacity=60%)"></td>
+<td width=40%><marquee direction=up onmouseover="this.stop()" onmouseout="this.start()"><font face="comic sans ms" size=2>&hearts;Model Institute Of Engg & Tech<br><br>
+&hearts;Pioneer in technical education<br><br>
+&hearts;Governed by a team of professionals<br><br>
+&hearts;Most cost effective</font></marquee></td>
+<td valign=top><form action="http://localhost/website/Register.php" name=f1 method=POST onsubmit="return validate()">
+<table border=0>
+<tr>
+<td>Enter Name</td>
+<td></td>
+<td><input type=text name=t1 size=12></td>
+</tr>
+<tr>
+<td>Enter Roll_no</td>
+<td></td>
+<td><input type=text name=t2 size=12></td>
+</tr>
+<tr>
+<td>Enter Email</td>
+<td></td>
+<td><input type=text name=t3 size=12></td>
+</tr>
+<tr>
+<td>Enter Password</td>
+<td></td>
+<td><input type=password name=t4 size=12></td>
+</tr>
+<tr>
+<td>Branch</td>
+<td></td>
+<td>
+<select name=s1>
+<option>Choose</option>
+<option value="ECE">ECE</option>
+<option value="CSE">CSE</option>
+<option value="EE">EE</option>
+<option value="Civil">Civil</option>
+<option value="IT">IT</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Semester</td>
+<td></td>
+<td>
+<select name=s2>
+<option>Choose</option>
+<option value="1st">1st</option>
+<option value="2nd">2nd</option>
+<option value="3rd">3rd</option>
+<option value="4th">4th</option>
+<option value="5th">5th</option>
+<option value="6th">6th</option>
+<option value="7th">7th</option>
+<option value="8th">8th</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<input type=submit value=Register>
+</td>
+<td></td>
+<td>
+<input type=reset value=Reset>
+</td>
+</tr>
+</table>
+</form>
+<font size=2 color=red id="auth"></font>
+</td>
+</tr>
+</table>
+</body>
+</html>
